@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .main{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 200px 700px 100px;
+            grid-template-rows: 100px 400px 100px ;
+            grid-template-areas: 
+            "nav header header header"
+            "nav article article aside"
+            "nav footer footer footer"
+
+             
+            
+        }
+        header{
+            background: khaki;
+            grid-area: header;    
+            
+        }
+
+        #nav{
+            background: palevioletred;
+            grid-area: nav;
+        }
+
+        #article{
+            background: white;
+            grid-area: article;   
+        }
+
+        #aside{
+            background: rgb(174, 174, 221);
+            grid-area: aside;
+        }
+
+        footer{
+            background: khaki;
+            grid-area: footer;   
+        }
+
+        header,nav,article,aside,footer{
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">  
+        <header>header</header>
+        <nav id="nav">nav</nav>
+        <article id="article">article</article>
+        <aside id="aside">aside</aside>
+        <footer>footer</footer>
+    </div> 
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .main{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 300px 700px 100px;
+            grid-template-rows: 70px 400px 70px ;
+            grid-template-areas: 
+            " header header header"
+            " aside article article"
+            " footer footer footer"
+               
+        }
+
+        header{
+            background: rgb(243, 152, 152);
+            grid-area: header;   
+            margin: 5px; 
+            text-align: center;
+            
+        }
+
+        #article{
+            background: palevioletred;
+            grid-area: article;   
+            margin: 5px;
+            text-align: center;
+            
+        }
+
+        #aside{
+            background: grey;
+            grid-area: aside;
+            margin: 5px;
+            text-align: center;
+            padding-top: 10em;
+        }
+
+        footer{
+            background: rgb(243, 152, 152);
+            grid-area: footer;  
+            margin: 5px; 
+            text-align: center;
+        }
+
+        header,nav,article,aside,footer{
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body style="background: pink;">
+    
+    <div class="main">  
+        <header>header</header>
+        <article id="article">
+            <p>article</p>
+            <div class="flex">
+                <img class="foto foto1" height="150px" style="margin: 5px;" src="cat.jpg"   alt="cat">
+                <img class="foto foto2" height="150px" style="margin: 5px;" src="cat.jpg"   alt="cat">
+                <img class="foto foto3" height="150px" style="margin: 5px;" src="cat.jpg"   alt="cat">
+            </div>
+        </article>
+        <aside id="aside">aside</aside>
+        <footer>footer</footer>
+    </div> 
+
+</body>
+</html>
